@@ -14,6 +14,7 @@ Nosso projeto consiste em um sistema de alunos de uma escola exotérica, podemos
 
 ## Screenshots
 ![image](https://user-images.githubusercontent.com/50469574/135015918-1eca5105-b09b-47ae-93d6-522983dafae5.png)
+![image](https://user-images.githubusercontent.com/50469574/135016009-37e36296-78df-46fb-8c08-908a24823a03.png)
 
 ## Instalação 
 **Linguagem**: Javascript<br>
