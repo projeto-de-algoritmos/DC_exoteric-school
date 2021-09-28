@@ -53,11 +53,11 @@
     const $display = doc.getElementById('display')
     $buttonBuscaAluno.addEventListener('click', function () {
         const position = 1 * $inputPosicao.value
-        const indexAluno = exoteric_select(notaAlunos, position)
-
-        console.log(notaAlunos)
-        console.log(indexAluno)
-
+        const indexAluno = exoteric_select(alunos, position)
+        
+        console.log('posicao buscada ' + position)
+        console.log('array de notas ' + notaAlunos)
+        console.log('index do aluno ' + indexAluno)
 
         const $nome = doc.createElement('span')
         const $nota = doc.createElement('span')
@@ -65,7 +65,6 @@
         $nome.textContent = alunos[indexAluno].nome
         $nota.textContent = alunos[indexAluno].nota
 
-        console.log(alunos[indexAluno].nome)
         $display.appendChild($nome)
         $display.appendChild($nota)
 
@@ -77,9 +76,9 @@
         const right = []
         const left = []
         a.forEach(element => {
-            if (element < median)
+            if (element.nota < median)
                 left.push(element)
-            else if (element > median)
+            else if (element.nota > median)
                 right.push(element)
         })
         if (left.length === k - 1)
@@ -93,7 +92,7 @@
     function oracle (a) {
         if (a.length < 25) {
             const randomIndex = Math.floor(Math.random() * (a.length - 0)) + 0;
-            return a[randomIndex]
+            return a[randomIndex].nota
         } else {
             const groups = []
             for (let i = 0; i < 5; i++) {
@@ -123,7 +122,6 @@
                 return a - b;
             });
     
-            console.log('mediana das medianas = ', median[2])
             return median[2]
         }
     }
