@@ -13,7 +13,7 @@
 Nosso projeto consiste em um sistema de alunos de uma escola exotérica, podemos consultar os alunos de uma posição N (que será informado pelo usuário) pelas suas notas através do algoritmo da mediana das medianas.
 
 ## Screenshots
-Adicione 3 ou mais screenshots do projeto em funcionamento.
+![image](https://user-images.githubusercontent.com/50469574/135015918-1eca5105-b09b-47ae-93d6-522983dafae5.png)
 
 ## Instalação 
 **Linguagem**: Javascript<br>
