@@ -24,9 +24,4 @@ Necessário apenas ter um navegador atualizado.
 ## Uso 
 Para executar o projeto basta abrir o arquivo index.html em seu navegador.
 
-## Outros 
-Quaisquer outras informações sobre seu projeto podem ser descritas abaixo.
-
-
-
 
