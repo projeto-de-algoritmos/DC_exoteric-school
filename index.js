@@ -31,13 +31,17 @@
         $listaAlunos.appendChild($li)
     })
 
+
+    const notaAlunos = alunos.map((e) => {
+        return e.nota;
+    })
     
     const $buttonBuscaAluno = doc.getElementById('button-busca-aluno')
     const $inputPosicao = doc.getElementById('input-posicao')
     const $display = doc.getElementById('display')
     $buttonBuscaAluno.addEventListener('click', function () {
         const position = 1 * $inputPosicao.value
-        const idexAluno = exoteric_select(alunos, position)
+        const indexAluno = exoteric_select(notaAlunos, position)
 
         const $nome = doc.createElement('span')
         const $nota = doc.createElement('span')
@@ -46,17 +50,9 @@
         $nota.textContent = alunos[indexAluno].nota
 
         $display.appendChild($nome)
-        $display.appendChild($)
+        $display.appendChild($nota)
 
     }, false)
-
-
-
-
-
-
-
-
 
 
     function exoteric_select (a, k) {
