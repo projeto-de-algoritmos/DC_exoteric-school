@@ -31,6 +31,10 @@
         $listaAlunos.appendChild($li)
     })
 
+    
+    const $butonBuscaAluno = doc.getElementById('button-busca-aluno')
+
+
 
     
   
