@@ -65,6 +65,7 @@
         $nome.textContent = aluno.nome
         $nota.textContent = aluno.nota
 
+        $display.innerHTML = ''
         $display.appendChild($nome)
         $display.appendChild($nota)
 
