@@ -5,12 +5,24 @@
             nota: 10
         },
         {
+            nome: 'Jairo Coelho da Mata',
+            nota: 1
+        },
+        {
             nome: 'Christian Fleury Alencar Siqueira',
             nota: 3
         },
         {
-            nome: 'Jairo Coelho da Mata',
-            nota: 1
+            nome: 'Jorge Siveira',
+            nota: 8
+        },
+        {
+            nome: 'Peracio',
+            nota: 7
+        },
+        {
+            nome: 'Edgar',
+            nota: 9.5
         },
     ]
 
@@ -43,6 +55,10 @@
         const position = 1 * $inputPosicao.value
         const indexAluno = exoteric_select(notaAlunos, position)
 
+        console.log(notaAlunos)
+        console.log(indexAluno)
+
+
         const $nome = doc.createElement('span')
         const $nota = doc.createElement('span')
 
@@ -52,6 +68,7 @@
         console.log(alunos[indexAluno].nome)
         $display.appendChild($nome)
         $display.appendChild($nota)
+
 
     }, false)
 
