@@ -5,3 +5,31 @@ body {
   margin: 0;
   box-sizing: border-box;
 }
+
+form {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+form input {
+  height: 1.8rem;
+  margin: 0 1rem;
+}
+
+form button {
+  height: 1.8rem;
+}
+
+/* ul {
+  list-style-type: none;
+} */
+
+/* li {
+  display: flex;
+  align-items: center;
+} */
+
+li span {
+  margin: 0.5rem 0.5rem;
+}
