@@ -46,7 +46,7 @@
         $nota.textContent = alunos[indexAluno].nota
 
         $display.appendChild($nome)
-        $display.appendChild($nota)
+        $display.appendChild($)
 
     }, false)
 
