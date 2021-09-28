@@ -49,11 +49,11 @@
         $nome.textContent = alunos[indexAluno].nome
         $nota.textContent = alunos[indexAluno].nota
 
+        console.log(alunos[indexAluno].nome)
         $display.appendChild($nome)
         $display.appendChild($nota)
 
     }, false)
-
 
     function exoteric_select (a, k) {
         const median = oracle(a)
@@ -65,7 +65,6 @@
             else if (element > median)
                 right.push(element)
         })
-        console.log(11)
         if (left.length === k - 1)
             return median
         if (left.length > k - 1)
@@ -73,7 +72,6 @@
         else
             return exoteric_select(right, k - left.length - 1)
     }
-    
     
     function oracle (a) {
         if (a.length < 25) {
@@ -112,15 +110,5 @@
             return median[2]
         }
     }
-    
-    
-
-
-    
-
-
-
-
-    
   
 })(window.DOM, document, window)
