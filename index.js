@@ -53,17 +53,17 @@
     const $display = doc.getElementById('display')
     $buttonBuscaAluno.addEventListener('click', function () {
         const position = 1 * $inputPosicao.value
-        const indexAluno = exoteric_select(alunos, position)
+        const aluno = exoteric_select(alunos, position)
         
         console.log('posicao buscada ' + position)
         console.log('array de notas ' + notaAlunos)
-        console.log('index do aluno ' + indexAluno)
+        console.log(aluno)
 
         const $nome = doc.createElement('span')
         const $nota = doc.createElement('span')
 
-        $nome.textContent = alunos[indexAluno].nome
-        $nota.textContent = alunos[indexAluno].nota
+        $nome.textContent = aluno.nome
+        $nota.textContent = aluno.nota
 
         $display.appendChild($nome)
         $display.appendChild($nota)
@@ -76,9 +76,9 @@
         const right = []
         const left = []
         a.forEach(element => {
-            if (element.nota < median)
+            if (element.nota < median.nota)
                 left.push(element)
-            else if (element.nota > median)
+            else if (element.nota > median.nota)
                 right.push(element)
         })
         if (left.length === k - 1)
@@ -92,7 +92,7 @@
     function oracle (a) {
         if (a.length < 25) {
             const randomIndex = Math.floor(Math.random() * (a.length - 0)) + 0;
-            return a[randomIndex].nota
+            return a[randomIndex]
         } else {
             const groups = []
             for (let i = 0; i < 5; i++) {
