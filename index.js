@@ -33,8 +33,21 @@
 
     
     const $buttonBuscaAluno = doc.getElementById('button-busca-aluno')
+    const $inputPosicao = doc.getElementById('input-posicao')
+    const $display = doc.getElementById('display')
     $buttonBuscaAluno.addEventListener('click', function () {
-        
+        const position = 1 * $inputPosicao.value
+        const idexAluno = exoteric_select(alunos, position)
+
+        const $nome = doc.createElement('span')
+        const $nota = doc.createElement('span')
+
+        $nome.textContent = alunos[indexAluno].nome
+        $nota.textContent = alunos[indexAluno].nota
+
+        $display.appendChild($nome)
+        $display.appendChild($nota)
+
     }, false)
 
 
