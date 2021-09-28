@@ -91,7 +91,7 @@
     }
     
     function oracle (a) {
-        if (a.length < 25) {
+        if (a.length < 2500) {
             const randomIndex = Math.floor(Math.random() * (a.length - 0)) + 0;
             return a[randomIndex]
         } else {
