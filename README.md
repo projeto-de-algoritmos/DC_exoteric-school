@@ -1,18 +1,4 @@
-**!! Atenção: Renomeie o seu repositório para (Tema)_(NomeDoProjeto). !!** 
-
-Temas:
- - Grafos1
- - Grafos2
- - PD
- - D&C
- - Greed
- - Final 
- 
- **!! *Não coloque os nomes dos alunos no título do repositório*. Exemplo de título correto: Grafos2_Labirinto-do-Minotauro !!**
- 
- (Apague essa seção)
-
-# NomedoProjeto
+# Exoteric School
 
 **Número da Lista**: 27<br>
 **Conteúdo da Disciplina**: D&C<br>
@@ -24,7 +10,7 @@ Temas:
 | 19/0055294  |  Thiago Siqueira Gomes |
 
 ## Sobre 
-Descreva os objetivos do seu projeto e como ele funciona. 
+Nosso projeto consiste em um sistema de alunos de uma escola exotérica, podemos consultar os alunos de uma posição N (que será informado pelo usuário) pelas suas notas através do algoritmo da mediana das medianas.
 
 ## Screenshots
 Adicione 3 ou mais screenshots do projeto em funcionamento.
