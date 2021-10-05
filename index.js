@@ -91,7 +91,7 @@
     }
     
     function oracle (a) {
-        if (a.length < 2500) {
+        if (a.length < 250) {
             const randomIndex = Math.floor(Math.random() * (a.length - 0)) + 0;
             return a[randomIndex]
         } else {
@@ -118,7 +118,6 @@
             for (let i = 0; i < 5; i++) {
                 medians.push(groups[i][2])
             }
-    
             medians.sort(function(a, b) {
                 return a - b;
             });
